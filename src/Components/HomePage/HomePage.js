@@ -10,7 +10,7 @@ export default function HomePage() {
   useEffect(() => {
     fetchMovies().then(response => {
       const fetchedMovies = response.data.results;
-      console.log('~ fetchedMovies', fetchedMovies);
+
       setMovies(fetchedMovies);
     });
   }, []);
@@ -29,6 +29,7 @@ export default function HomePage() {
                 }}
               >
                 {movie.original_title}
+                {movie.name}
               </StyledLink>
             </MoviesListItem>
           ))}
