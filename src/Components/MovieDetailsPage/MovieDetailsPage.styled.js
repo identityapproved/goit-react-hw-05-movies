@@ -32,3 +32,15 @@ export const ReviewsList = styled.ul`
 export const ReviewsItem = styled.li`
   margin-bottom: 40px;
 `;
+
+export const GoBackBtn = styled.button`
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 23px;
+  padding: 12px 24px;
+  color: black;
+  transition: all 250ms ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
